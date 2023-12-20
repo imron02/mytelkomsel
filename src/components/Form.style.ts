@@ -7,6 +7,7 @@ export const labelThemed = (isDarkTheme: boolean) => {
       fontSize: 14,
       color: isDarkTheme ? Colors.WHITE : Colors.BLACK,
       marginBottom: 8,
+      fontFamily: 'OpenSans-Bold',
     },
   });
 };

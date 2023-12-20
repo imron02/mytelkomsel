@@ -25,7 +25,7 @@ const Login = () => (
     </View>
 
     <View style={styles.footer}>
-      <Button title="Masuk" color="primary" />
+      <Button title="Masuk" color="primary" uppercase />
       <Text style={styles.textLoginWith}>Atau masuk menggunakan</Text>
 
       <TouchableOpacity style={styles.googleSignIn}>

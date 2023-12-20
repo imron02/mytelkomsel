@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
   loginBannerText: {
     fontSize: 20,
     marginTop: 46,
+    fontFamily: 'OpenSans-Bold',
   },
   tnc: {
     display: 'flex',
@@ -21,9 +22,11 @@ export const styles = StyleSheet.create({
   tncText: {
     marginLeft: 12,
     fontSize: 18,
+    fontFamily: 'OpenSans-Regular',
   },
   tncLink: {
     color: Colors.PRIMARY,
+    fontFamily: 'OpenSans-Medium',
   },
   footer: {
     flex: 1,
@@ -33,6 +36,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginVertical: 16,
     fontSize: 14,
+    fontFamily: 'OpenSans-Medium',
   },
   googleSignIn: {
     flexDirection: 'row',
@@ -46,6 +50,7 @@ export const styles = StyleSheet.create({
   },
   googleSignInText: {
     marginLeft: 8,
+    fontFamily: 'OpenSans-Medium',
   },
   fbSignIn: {
     marginTop: 8,
@@ -62,5 +67,6 @@ export const styles = StyleSheet.create({
   fbSignInText: {
     marginLeft: 8,
     color: Colors.WHITE,
+    fontFamily: 'OpenSans-Medium',
   },
 });
