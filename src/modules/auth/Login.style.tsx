@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
   tnc: {
     display: 'flex',
     flexDirection: 'row',
+    marginTop: 5,
   },
   tncText: {
     marginLeft: 12,
