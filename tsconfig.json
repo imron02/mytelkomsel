@@ -12,5 +12,6 @@
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
