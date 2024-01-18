@@ -1,24 +1,20 @@
 import {CheckBox, Input, InputProps as RNEInputProps} from '@rneui/themed';
-import React from 'react';
+import React, {PropsWithChildren, RefObject} from 'react';
 import {GestureResponderEvent, useColorScheme} from 'react-native';
 import styles, {labelThemed} from './Form.style';
 
 interface InputProps extends RNEInputProps {
-  placeholder: string;
-  label: string;
+  ref?: RefObject<typeof Input> & RefObject<PropsWithChildren<any>>;
 }
 
 const FormInput = (props: InputProps) => {
   const mode = useColorScheme() === 'dark';
-  const {placeholder, label, ...restProps} = props;
-
   return (
     <Input
-      {...restProps}
+      {...props}
+      ref={props.ref}
       containerStyle={styles.container}
-      label={label}
       labelStyle={labelThemed(mode).label}
-      placeholder={placeholder}
       style={styles.input}
       inputContainerStyle={styles.containerInput}
     />

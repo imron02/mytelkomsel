@@ -7,11 +7,6 @@ import {TouchableOpacity, View} from 'react-native';
 import * as Yup from 'yup';
 import {styles} from './Login.style';
 
-type LoginFormType = {
-  phoneNumber: string;
-  tnc: boolean;
-};
-
 const LoginSchema = Yup.object().shape({
   phoneNumber: Yup.string()
     .min(10, 'Minimal 10 digit')
