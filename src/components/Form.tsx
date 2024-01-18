@@ -1,36 +1,44 @@
-import {CheckBox, Input} from '@rneui/themed';
+import {CheckBox, Input, InputProps as RNEInputProps} from '@rneui/themed';
 import React from 'react';
+import {GestureResponderEvent, useColorScheme} from 'react-native';
 import styles, {labelThemed} from './Form.style';
-import {useColorScheme} from 'react-native';
 
-type InputProps = {
+interface InputProps extends RNEInputProps {
   placeholder: string;
   label: string;
-};
+}
 
 const FormInput = (props: InputProps) => {
   const mode = useColorScheme() === 'dark';
+  const {placeholder, label, ...restProps} = props;
 
   return (
     <Input
+      {...restProps}
       containerStyle={styles.container}
-      label={props.label}
+      label={label}
       labelStyle={labelThemed(mode).label}
-      placeholder={props.placeholder}
+      placeholder={placeholder}
       style={styles.input}
       inputContainerStyle={styles.containerInput}
     />
   );
 };
 
-const FormCheckBox = () => (
+type CheckboxProps = {
+  checked: boolean;
+  onPress?: (event: GestureResponderEvent) => void;
+};
+
+const FormCheckBox = (props: CheckboxProps) => (
   <CheckBox
-    checked
+    checked={props.checked}
     iconType="material-community"
     checkedIcon="checkbox-marked"
     uncheckedIcon="checkbox-blank-outline"
     checkedColor="red"
     containerStyle={styles.containerCheckbox}
+    onPress={props.onPress}
   />
 );
 
