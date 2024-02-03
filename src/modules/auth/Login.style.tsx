@@ -13,7 +13,6 @@ export const styles = StyleSheet.create({
   loginBannerText: {
     fontSize: 20,
     marginTop: 46,
-    fontFamily: 'OpenSans-Bold',
   },
   tnc: {
     display: 'flex',

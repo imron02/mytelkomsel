@@ -1,9 +1,10 @@
 import {FBLogo, GoogleLogo, LoginBanner} from '@assets/icon';
 import {Form} from '@components/Form';
-import {Button, Text} from '@rneui/themed';
+import {Button} from '@rneui/themed';
 import {Formik} from 'formik';
 import React from 'react';
-import {TouchableOpacity, View} from 'react-native';
+import {TouchableOpacity} from 'react-native';
+import {H6, Text, View} from 'tamagui';
 import * as Yup from 'yup';
 import {styles} from './Login.style';
 
@@ -16,12 +17,12 @@ const LoginSchema = Yup.object().shape({
 
 const Login = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.loginBanner}>
+    <View m={20} backgroundColor="$bg" f={1}>
+      <View mt={32} mb={24}>
         <LoginBanner />
-        <Text h4 h4Style={styles.loginBannerText}>
+        <H6 fos={18} fow="bold" mt={20}>
           Silahkan masuk dengan nomor telkomsel kamu
-        </Text>
+        </H6>
       </View>
 
       <Formik
