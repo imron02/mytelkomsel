@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-telkomsel",
+    "name": "My Telkomsel",
     "slug": "my-telkomsel",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,16 +10,18 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#EC2028"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.imron02.my-telkomsel"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.imron02.mytelkomsel"
     },
     "web": {
       "bundler": "metro",
