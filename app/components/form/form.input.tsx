@@ -7,7 +7,7 @@ type FormInputProps = {
 export default function FormInput(props: FormInputProps) {
   return (
     <YStack gap="$2">
-      <Text fontSize="14" fontFamily="OpenSansBold">
+      <Text fontSize={14} fontFamily="OpenSansBold">
         {props.label}
       </Text>
       <Input
@@ -15,7 +15,7 @@ export default function FormInput(props: FormInputProps) {
         borderColor="$greyWhite"
         borderRadius="$1.5"
         backgroundColor="$white"
-        fontSize="14"
+        fontSize={14}
       />
     </YStack>
   );

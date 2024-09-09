@@ -6,7 +6,7 @@ type FormButtonProps = {
 
 export default function FormButton({ label, ...props }: FormButtonProps) {
   return (
-    <Button fontSize="14" color="$white" fontFamily="OpenSansBold" {...props}>
+    <Button fontSize={14} color="$white" fontFamily="OpenSansBold" {...props}>
       {label}
     </Button>
   );
